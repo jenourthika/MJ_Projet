@@ -53,101 +53,115 @@
             "JMEntreprise",
             "SocieteJL",
             "TransportV"});
-            this.cbNom.Location = new System.Drawing.Point(187, 54);
+            this.cbNom.Location = new System.Drawing.Point(218, 41);
+            this.cbNom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbNom.Name = "cbNom";
-            this.cbNom.Size = new System.Drawing.Size(121, 21);
+            this.cbNom.Size = new System.Drawing.Size(140, 24);
             this.cbNom.TabIndex = 0;
             // 
             // cbReseau
             // 
             this.cbReseau.FormattingEnabled = true;
-            this.cbReseau.Location = new System.Drawing.Point(187, 106);
+            this.cbReseau.Location = new System.Drawing.Point(216, 101);
+            this.cbReseau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbReseau.Name = "cbReseau";
-            this.cbReseau.Size = new System.Drawing.Size(121, 21);
+            this.cbReseau.Size = new System.Drawing.Size(140, 24);
             this.cbReseau.TabIndex = 1;
             // 
             // tbLibelle
             // 
-            this.tbLibelle.Location = new System.Drawing.Point(187, 168);
+            this.tbLibelle.Location = new System.Drawing.Point(218, 172);
+            this.tbLibelle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbLibelle.Name = "tbLibelle";
-            this.tbLibelle.Size = new System.Drawing.Size(186, 20);
+            this.tbLibelle.Size = new System.Drawing.Size(140, 23);
             this.tbLibelle.TabIndex = 2;
             // 
             // tbDuree
             // 
-            this.tbDuree.Location = new System.Drawing.Point(416, 220);
+            this.tbDuree.Location = new System.Drawing.Point(481, 236);
+            this.tbDuree.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbDuree.Name = "tbDuree";
-            this.tbDuree.Size = new System.Drawing.Size(116, 20);
+            this.tbDuree.Size = new System.Drawing.Size(135, 23);
             this.tbDuree.TabIndex = 4;
             // 
             // tbChemin
             // 
-            this.tbChemin.Location = new System.Drawing.Point(259, 257);
+            this.tbChemin.Location = new System.Drawing.Point(481, 287);
+            this.tbChemin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbChemin.Name = "tbChemin";
-            this.tbChemin.Size = new System.Drawing.Size(95, 20);
+            this.tbChemin.Size = new System.Drawing.Size(135, 23);
             this.tbChemin.TabIndex = 5;
             // 
             // rtbOffre
             // 
-            this.rtbOffre.Location = new System.Drawing.Point(240, 330);
+            this.rtbOffre.Location = new System.Drawing.Point(282, 371);
+            this.rtbOffre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rtbOffre.Name = "rtbOffre";
-            this.rtbOffre.Size = new System.Drawing.Size(175, 96);
+            this.rtbOffre.Size = new System.Drawing.Size(203, 117);
             this.rtbOffre.TabIndex = 6;
             this.rtbOffre.Text = "";
             // 
             // btEnvoyer
             // 
-            this.btEnvoyer.Location = new System.Drawing.Point(211, 442);
+            this.btEnvoyer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btEnvoyer.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEnvoyer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btEnvoyer.Location = new System.Drawing.Point(235, 519);
+            this.btEnvoyer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btEnvoyer.Name = "btEnvoyer";
-            this.btEnvoyer.Size = new System.Drawing.Size(75, 23);
+            this.btEnvoyer.Size = new System.Drawing.Size(87, 28);
             this.btEnvoyer.TabIndex = 7;
             this.btEnvoyer.Text = "Envoyer";
-            this.btEnvoyer.UseVisualStyleBackColor = true;
+            this.btEnvoyer.UseVisualStyleBackColor = false;
             this.btEnvoyer.Click += new System.EventHandler(this.btEnvoyer_Click);
             // 
             // btAnnuler
             // 
-            this.btAnnuler.Location = new System.Drawing.Point(391, 442);
+            this.btAnnuler.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btAnnuler.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btAnnuler.Location = new System.Drawing.Point(451, 519);
+            this.btAnnuler.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btAnnuler.Name = "btAnnuler";
-            this.btAnnuler.Size = new System.Drawing.Size(75, 23);
+            this.btAnnuler.Size = new System.Drawing.Size(87, 28);
             this.btAnnuler.TabIndex = 8;
             this.btAnnuler.Text = "Annuler";
-            this.btAnnuler.UseVisualStyleBackColor = true;
+            this.btAnnuler.UseVisualStyleBackColor = false;
             this.btAnnuler.Click += new System.EventHandler(this.btAnnuler_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(66, 61);
+            this.label1.Location = new System.Drawing.Point(73, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
+            this.label1.Size = new System.Drawing.Size(115, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nom de l\'entreprise";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(66, 109);
+            this.label2.Location = new System.Drawing.Point(73, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(111, 16);
             this.label2.TabIndex = 10;
             this.label2.Text = "Domaine de l\'offre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 168);
+            this.label3.Location = new System.Drawing.Point(64, 172);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 11;
             this.label3.Text = "libellé de l\'offre";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 220);
+            this.label4.Location = new System.Drawing.Point(64, 232);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 13);
+            this.label4.Size = new System.Drawing.Size(135, 16);
             this.label4.TabIndex = 12;
             this.label4.Text = "Date de début de stage";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -155,27 +169,27 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(314, 220);
+            this.label5.Location = new System.Drawing.Point(388, 239);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.Size = new System.Drawing.Size(39, 16);
             this.label5.TabIndex = 13;
             this.label5.Text = "Durée";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 264);
+            this.label6.Location = new System.Drawing.Point(223, 290);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(191, 13);
+            this.label6.Size = new System.Drawing.Size(222, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = "Chemin de stockage de l\'offre de stage";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(279, 304);
+            this.label7.Location = new System.Drawing.Point(307, 351);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 13);
+            this.label7.Size = new System.Drawing.Size(120, 16);
             this.label7.TabIndex = 15;
             this.label7.Text = "Descriptif de l\'offre";
             // 
@@ -183,16 +197,18 @@
             // 
             this.dtOffre.CustomFormat = "yyyy/MM/dd";
             this.dtOffre.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtOffre.Location = new System.Drawing.Point(145, 220);
+            this.dtOffre.Location = new System.Drawing.Point(216, 232);
+            this.dtOffre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtOffre.Name = "dtOffre";
-            this.dtOffre.Size = new System.Drawing.Size(163, 20);
+            this.dtOffre.Size = new System.Drawing.Size(142, 23);
             this.dtOffre.TabIndex = 16;
             // 
             // Saisir
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 491);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(711, 553);
             this.Controls.Add(this.dtOffre);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -209,6 +225,8 @@
             this.Controls.Add(this.tbLibelle);
             this.Controls.Add(this.cbReseau);
             this.Controls.Add(this.cbNom);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Saisir";
             this.Text = "Saisir";
             this.Load += new System.EventHandler(this.Saisir_Load);

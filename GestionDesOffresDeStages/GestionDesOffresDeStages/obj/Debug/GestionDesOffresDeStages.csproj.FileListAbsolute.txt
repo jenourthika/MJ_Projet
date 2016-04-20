@@ -27,3 +27,4 @@ C:\Users\magou\Desktop\Projet3miageGROUPE4MagouJENA\GestionDesOffresDeStages\Ges
 C:\Users\magou\Desktop\Projet3miageGROUPE4MagouJENA\GestionDesOffresDeStages\GestionDesOffresDeStages\obj\Debug\GestionDesOffresDeStages.Properties.Resources.resources
 C:\Users\magou\Desktop\Projet3miageGROUPE4MagouJENA\GestionDesOffresDeStages\GestionDesOffresDeStages\obj\Debug\GestionDesOffresDeStages.Saisir.resources
 C:\Users\magou\Desktop\Projet3miageGROUPE4MagouJENA\GestionDesOffresDeStages\GestionDesOffresDeStages\obj\Debug\GestionDesOffresDeStages.csproj.GenerateResource.Cache
+C:\Users\magou\Desktop\Projet3miageGROUPE4MagouJENA\GestionDesOffresDeStages\GestionDesOffresDeStages\obj\Debug\GestionDesOffresDeStages.csprojResolveAssemblyReference.cache

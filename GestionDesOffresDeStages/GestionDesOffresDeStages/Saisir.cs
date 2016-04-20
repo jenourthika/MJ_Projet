@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
+using System.Data.Common;
 using MySql.Data.MySqlClient;
 
 namespace GestionDesOffresDeStages
@@ -62,41 +64,39 @@ namespace GestionDesOffresDeStages
             //if (dateDebut > DateTime.Now)
             //{
             //        cbNom = cbNom.SelectedValue;
-            if (cbNom.ValueMember != "" && cbReseau.Text != "" && tbLibelle.Text != "" && rtbOffre.Text != "" && tbDuree.Text != "" && tbChemin.Text != "")
+            if (cbNom.Text != "" && cbReseau.Text != "" && tbLibelle.Text != "" && rtbOffre.Text != "" && tbDuree.Text != "" && tbChemin.Text != "")
             {
 
                 this.DialogResult = DialogResult.OK;
-
-                string nom = cbNom.ValueMember;
+                int R1;
+                string nom = cbNom.Text;
                 string reseau = cbReseau.Text;
                 string libelle = tbLibelle.Text;
                 dateDebut = dtOffre.Value;
                 string duree = tbDuree.Text;
                 string chemin = tbChemin.Text;
                 string offre = rtbOffre.Text;
-               
+                conn = new MySqlConnection("Server=127.0.0.1;User ID=root;Database=offre_stage; Password=;");
+                conn.Open(); // on ouvre la connexion à la base 
+                DbCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT idEntreprise FROM entreprise where raisonSociale = '" + nom + "' ;";
+                  R1 = (int)cmd.ExecuteScalar();
 
-                //entre les données dans la table tournoi fait appel à la classe bdd et utilise la methode creerTournoi
-                bdd.SaisirOffre(' ', libelle, offre, reseau, dateDebut, duree, chemin, "'O'",nom);
+                //entre les données dans la table offrestage fait appel à la classe bdd 
+                bdd.SaisirOffre(' ', libelle, offre, reseau, dateDebut, duree, chemin,"oui",nom,R1);
                 MessageBox.Show(" votre offe a bien été ajoutée");
                 Form1 f = new Form1();
                 f.Show();
                 this.Hide();
 
             }
-            //        else
-            //            MessageBox.Show(" Veuillez renseigner toutes les données");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("La date de votre offre est incorrecte.");
-            //    }
-            //}
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
+           else
+            {
+                       MessageBox.Show(" Veuillez renseigner toutes les données");
+             }
 
         }
+
+     
     }
 }

@@ -22,13 +22,13 @@ namespace GestionDesOffresDeStages
             conn.Open(); // on ouvre la connexion à la base 
 
         }
-        public static void Inscription(String Nom, String Prenom, String User, String MDP, int TypeProfil,String CV,String LettreMotiv,String Mail)
+        public static void Inscription(String Nom, String Prenom, String User, String MDP, int TypeProfil,String CV,String Mail)
         {
 
             conn = new MySqlConnection("Server=127.0.0.1;User ID=root;Database=offre_stage; Password=;");
             conn.Open(); // on ouvre la connexion à la base 
             DbCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "Insert into profil VALUES ('" + Nom + "','" + Prenom + "','" + User + "','" + MDP + "','2','" + CV + "','" + LettreMotiv + "','" + Mail + "');";
+            cmd.CommandText = "Insert into profil VALUES ('" + Nom + "','" + Prenom + "','" + User + "','" + MDP + "','2','" + CV + "','" + Mail + "');";
             cmd.ExecuteNonQuery();
         }
         public static void EnregistrerEntreprise(int idEntreprise, String raisonSociale, String adresseVille, String adresseRue, String adresseCodePostal, String telephone,String secteur,String Mail)
@@ -41,21 +41,21 @@ namespace GestionDesOffresDeStages
             cmd.CommandText = "Insert into entreprise VALUES ('','" + raisonSociale + "','" + adresseVille + "','" + adresseRue + "','" + adresseCodePostal + "','" + telephone + "','" + secteur + "','" + Mail+"');";
             cmd.ExecuteNonQuery();
         }
-        public static void SaisirOffre(int idOffreStage, String libelle, String descriptif, String domaine, DateTime dateDebut, String durée, String chemin, String valide,String laSociete)
+        public static void SaisirOffre(int idOffreStage, String libelle, String descriptif, String domaine, DateTime dateDebut, String durée, String chemin, String valide,String laSociete,int idEntreprise)
         {
 
             conn = new MySqlConnection("Server=127.0.0.1;User ID=root;Database=offre_stage; Password=;");
             conn.Open(); // on ouvre la connexion à la base 
             DbCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "Insert into offreStage VALUES ('','" + libelle + "','" + descriptif + "','" + domaine + "','" + dateDebut.Date.ToString("yyyy/MM/dd") +"','" + durée + "','" + chemin + "',' ','"+ laSociete +"');";
+            cmd.CommandText = "Insert into offreStage VALUES (' ','" + libelle + "','" + descriptif + "','" + domaine + "','" + dateDebut.Date.ToString("yyyy/MM/dd") +"','" + durée + "','" + chemin + "','"+ valide +"','"+ laSociete +"','"+idEntreprise+"');";
             cmd.ExecuteNonQuery();
         }
-        public static void Postuler(String nom, String prenom, String mail, String cv,  int idOffreStage, int idPostulant,String RaisonSociale)
+        public static void Postuler(String nom, String prenom, String mail, string cv,  int idOffreStage, int idPostulant,String RaisonSociale)
         {
             conn = new MySqlConnection("Server=127.0.0.1;User ID=root;Database=offre_stage; Password=;");
             conn.Open(); // on ouvre la connexion à la base 
             DbCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "Insert into Postulant VALUES('" + nom + "','" + prenom + "','" + mail + "','" + cv + "','" + RaisonSociale + "','" + idOffreStage + "','" + idPostulant + "');";
+            cmd.CommandText = "Insert into Postulant VALUES('" + nom + "','" + prenom + "','" + mail + "','" + cv + "','"+ idOffreStage +"',' ','"+RaisonSociale+" ');";
             cmd.ExecuteNonQuery();
 
 

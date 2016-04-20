@@ -59,5 +59,10 @@ namespace GestionDesOffresDeStages
         {
             Application.Exit();
         }
+
+        private void Authentifier_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

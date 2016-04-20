@@ -39,72 +39,81 @@
             // 
             // btConnexion
             // 
-            this.btConnexion.Location = new System.Drawing.Point(156, 168);
+            this.btConnexion.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btConnexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btConnexion.Location = new System.Drawing.Point(182, 194);
             this.btConnexion.Name = "btConnexion";
-            this.btConnexion.Size = new System.Drawing.Size(75, 23);
+            this.btConnexion.Size = new System.Drawing.Size(87, 27);
             this.btConnexion.TabIndex = 0;
             this.btConnexion.Text = "Connexion";
-            this.btConnexion.UseVisualStyleBackColor = true;
+            this.btConnexion.UseVisualStyleBackColor = false;
             this.btConnexion.Click += new System.EventHandler(this.btConnexion_Click);
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(244, 56);
+            this.tbUser.Location = new System.Drawing.Point(285, 65);
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(100, 20);
+            this.tbUser.Size = new System.Drawing.Size(116, 23);
             this.tbUser.TabIndex = 1;
             // 
             // tbMDP
             // 
-            this.tbMDP.Location = new System.Drawing.Point(244, 108);
+            this.tbMDP.Location = new System.Drawing.Point(285, 125);
             this.tbMDP.Name = "tbMDP";
             this.tbMDP.PasswordChar = '*';
-            this.tbMDP.Size = new System.Drawing.Size(100, 20);
+            this.tbMDP.Size = new System.Drawing.Size(116, 23);
             this.tbMDP.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(153, 56);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(159, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "identifiant";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 115);
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(159, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mot de Passe";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(370, 168);
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(432, 194);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(87, 27);
             this.button2.TabIndex = 5;
             this.button2.Text = "Quitter";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btInscription
             // 
-            this.btInscription.Location = new System.Drawing.Point(259, 166);
+            this.btInscription.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btInscription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btInscription.Location = new System.Drawing.Point(302, 192);
             this.btInscription.Name = "btInscription";
-            this.btInscription.Size = new System.Drawing.Size(75, 25);
+            this.btInscription.Size = new System.Drawing.Size(87, 29);
             this.btInscription.TabIndex = 6;
             this.btInscription.Text = "S\'inscrire";
-            this.btInscription.UseVisualStyleBackColor = true;
+            this.btInscription.UseVisualStyleBackColor = false;
             this.btInscription.Click += new System.EventHandler(this.btInscription_Click);
             // 
             // Authentifier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 281);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(687, 324);
             this.Controls.Add(this.btInscription);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -112,8 +121,10 @@
             this.Controls.Add(this.tbMDP);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.btConnexion);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Authentifier";
             this.Text = "Authentifier";
+            this.Load += new System.EventHandler(this.Authentifier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

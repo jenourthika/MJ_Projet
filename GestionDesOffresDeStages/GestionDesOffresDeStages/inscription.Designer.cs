@@ -38,145 +38,153 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbCV = new System.Windows.Forms.TextBox();
-            this.tbLM = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbCV = new System.Windows.Forms.Label();
             this.tbMail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btFichier = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btValider
             // 
-            this.btValider.Location = new System.Drawing.Point(137, 279);
+            this.btValider.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btValider.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btValider.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btValider.Location = new System.Drawing.Point(444, 257);
             this.btValider.Name = "btValider";
-            this.btValider.Size = new System.Drawing.Size(75, 23);
+            this.btValider.Size = new System.Drawing.Size(87, 29);
             this.btValider.TabIndex = 0;
             this.btValider.Text = "Valider";
-            this.btValider.UseVisualStyleBackColor = true;
+            this.btValider.UseVisualStyleBackColor = false;
             this.btValider.Click += new System.EventHandler(this.btValider_Click);
             // 
             // tbNom
             // 
-            this.tbNom.Location = new System.Drawing.Point(148, 51);
+            this.tbNom.Location = new System.Drawing.Point(146, 63);
             this.tbNom.Name = "tbNom";
-            this.tbNom.Size = new System.Drawing.Size(100, 20);
+            this.tbNom.Size = new System.Drawing.Size(116, 23);
             this.tbNom.TabIndex = 1;
             // 
             // tbPrenom
             // 
-            this.tbPrenom.Location = new System.Drawing.Point(148, 98);
+            this.tbPrenom.Location = new System.Drawing.Point(146, 121);
             this.tbPrenom.Name = "tbPrenom";
-            this.tbPrenom.Size = new System.Drawing.Size(100, 20);
+            this.tbPrenom.Size = new System.Drawing.Size(116, 23);
             this.tbPrenom.TabIndex = 2;
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(148, 157);
+            this.tbUser.Location = new System.Drawing.Point(146, 174);
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(100, 20);
+            this.tbUser.Size = new System.Drawing.Size(116, 23);
             this.tbUser.TabIndex = 3;
             // 
             // tbMDP
             // 
-            this.tbMDP.Location = new System.Drawing.Point(148, 215);
+            this.tbMDP.Location = new System.Drawing.Point(146, 242);
             this.tbMDP.Name = "tbMDP";
-            this.tbMDP.Size = new System.Drawing.Size(100, 20);
+            this.tbMDP.Size = new System.Drawing.Size(116, 23);
             this.tbMDP.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 58);
+            this.label1.Location = new System.Drawing.Point(54, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(32, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nom";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 105);
+            this.label2.Location = new System.Drawing.Point(54, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Prenom";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 157);
+            this.label3.Location = new System.Drawing.Point(54, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(32, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "User";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 215);
+            this.label4.Location = new System.Drawing.Point(54, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.Size = new System.Drawing.Size(33, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "MDP";
             // 
             // tbCV
             // 
-            this.tbCV.Location = new System.Drawing.Point(293, 62);
+            this.tbCV.Location = new System.Drawing.Point(386, 59);
             this.tbCV.Name = "tbCV";
-            this.tbCV.Size = new System.Drawing.Size(100, 20);
+            this.tbCV.Size = new System.Drawing.Size(116, 23);
             this.tbCV.TabIndex = 9;
             // 
-            // tbLM
+            // lbCV
             // 
-            this.tbLM.Location = new System.Drawing.Point(293, 157);
-            this.tbLM.Name = "tbLM";
-            this.tbLM.Size = new System.Drawing.Size(100, 20);
-            this.tbLM.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(301, 31);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "CV *";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(290, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "lettre de motivation";
+            this.lbCV.AutoSize = true;
+            this.lbCV.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCV.Location = new System.Drawing.Point(320, 59);
+            this.lbCV.Name = "lbCV";
+            this.lbCV.Size = new System.Drawing.Size(27, 16);
+            this.lbCV.TabIndex = 11;
+            this.lbCV.Text = "CV ";
             // 
             // tbMail
             // 
-            this.tbMail.Location = new System.Drawing.Point(286, 215);
+            this.tbMail.Location = new System.Drawing.Point(386, 137);
             this.tbMail.Name = "tbMail";
-            this.tbMail.Size = new System.Drawing.Size(100, 20);
+            this.tbMail.Size = new System.Drawing.Size(116, 23);
             this.tbMail.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(333, 196);
+            this.label7.Location = new System.Drawing.Point(320, 137);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 13);
+            this.label7.Size = new System.Drawing.Size(31, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Mail";
             // 
+            // btFichier
+            // 
+            this.btFichier.Location = new System.Drawing.Point(521, 59);
+            this.btFichier.Name = "btFichier";
+            this.btFichier.Size = new System.Drawing.Size(125, 23);
+            this.btFichier.TabIndex = 15;
+            this.btFichier.Text = "Importer un Fichier";
+            this.btFichier.UseVisualStyleBackColor = true;
+            this.btFichier.Click += new System.EventHandler(this.btFichier_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(530, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 159);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // inscription
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 324);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(658, 352);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btFichier);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbMail);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.tbLM);
+            this.Controls.Add(this.lbCV);
             this.Controls.Add(this.tbCV);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -187,9 +195,11 @@
             this.Controls.Add(this.tbPrenom);
             this.Controls.Add(this.tbNom);
             this.Controls.Add(this.btValider);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "inscription";
             this.Text = "inscription";
             this.Load += new System.EventHandler(this.inscription_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,10 +217,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbCV;
-        private System.Windows.Forms.TextBox tbLM;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbCV;
         private System.Windows.Forms.TextBox tbMail;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btFichier;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
